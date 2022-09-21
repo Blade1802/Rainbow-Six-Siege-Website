@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rainbow Six Siege</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Assets/Scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html"><img class="logo" src="Assets/Images/logo.png" alt="logo"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="home.html">Home</a></li>
+							<li class="active"><a href="news.html">News</a></li>
+							<li><a href="operators.html">Operators</a></li>
+							<li><a href="esports.html">Esports</a></li>
+							<li><a href="giveaway.html">Giveaway</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"  onclick="maintenance()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="r6s-home">
+			<section>
+				<div class="r6s-highlights-news-feed no-background">		
+					<div class="container">    
+						<div class="row">
+							<div class="col-sm-12 r6s-news-feed">
+								
+								<div class="r6s-highlights-news-feed-title">
+									<h1>Rainbow Six Siege News</h1>
+								</div>
+								
+								<div class="news-updates">
+								
+									<div class="news-updates-wrapper">
+										<ul id="page-1" class="news-wrapper-items">
+										
+											<li class="news-wrapper-items-item news-active-item first-wrapper-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/neondawn.jpg" alt="Neon Dawn Picture"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Neon Dawn Patch Notes Addendum</h3>
+													<p>
+														Updates and fixes made over the course of the Y5S4 Test Server.
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/nextgen.jpg" alt="Next Generation Consoles"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>NEXT GENERATION CONSOLES</h3>
+													<p>
+														Rainbow Six Siege is coming to Next-Gen consoles with enhanced performance.
+													</p>
+												</div>
+												
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/welcome.jpg" alt="Welcome Pack"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Welcome Pack</h3>
+													<p>
+														Enhance your Rainbow Six Siege experience with the brand new Welcome Pack!
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/Y5S4StreamerCharmsNEWSEASON.png" alt="Streamer Charms"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>New Rainbow Six Siege Streamer Charms for Y5S4</h3>
+													<p>
+														Announcing the new charms with Y5S4 Neon Dawn!
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/R6S_Y5S4_Aruni_Keyart.jpg" alt="Aruni Picture"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Meet Aruni, Nighthaven’s Newest Recruit</h3>
+													<p>
+														I’ve known Apha “Aruni” Tawanroong for years. She was a detective with the Royal Thai Police when we met.
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/Patchanka.jpg" alt="Tachanka Rework"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Tachanka Rework</h3>
+													<p>
+														We announced it at the beginning of the year, and finally our very first ever Operator rework is here. Russian Defender Tachanka has proven to be a well-liked character in the community, but he came with a set of flaws we wanted to address and repair.
+													</p>
+												</div>
+											</li>
+											
+										</ul>
+											
+										<ul id="page-2" class="news-wrapper-items hidden">
+										
+											<li class="news-wrapper-items-item news-active-item first-wrapper-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/Golden-gun.jpg" alt="Golden Gun 2.0"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>NEW ARCADE GAME MODE: GOLDEN GUN 2.0</h3>
+													<p>
+														Our first Arcade game mode, Golden Gun, is back! This Arcade is a playlist that will with small scale gameplay modifiers for a limited time, and each might come back in the future if the community likes it. 
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/y5s3_1_pn.png" alt="3.1 Patch Notes"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Y5S3.1 Patch Notes</h3>
+													<p>
+														The Y5S3.1 update contains primarily a backlog of bug fixes from the TS that did not make it in time for the season update. The Y5S3.1 Patch will come to PC on the week of September 21st, and will go out to consoles soon after.
+													</p>
+												</div>
+												
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/r6s-keyart-zero.jpg" alt="Zero's Picture"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Sam Fisher joins Rainbow as Specialist Zero</h3>
+													<p>
+														“Harry, you would think it was hard for me to evaluate someone held in such high esteem. The figure of Sam Fisher has always been wrapped in mystery.”
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/TWITCH_R6_ART_LANDSCAPE_V2_SMALL.png" alt="Twitch Extension"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>PRESENTING THE NEW RAINBOW SIX: SIEGE – TWITCH OFFICIAL EXTENSION</h3>
+													<p>
+														Discover the Official Twitch Extension for Rainbow Six Siege - Available now
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/R6S_Arcade_Keyart_Attrition.jpg" alt="Attrition Gamemode"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>NEW ARCADE GAME MODE: ATTRITION</h3>
+													<p>
+														This new Arcade might test your limits, but in the end you’ll come out a stronger player. In this game mode, you’ll have to get familiar with many Operators in order to win.
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/y5s2-blogpost-main.jpg" alt="Ace and Melusi"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Meet Ace and Melusi</h3>
+													<p>
+														“Harry, you asked me to consider our newest recruits. They’re interesting on paper, but it is in person we are introduced to their strengths. I can see where perhaps I can teach them something useful, yes?"
+													</p>
+												</div>
+											</li>
+											
+										</ul>
+										
+										<ul id="page-3" class="news-wrapper-items hidden">	
+										
+											<li class="news-wrapper-items-item news-active-item first-wrapper-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/Golden-gun.jpg" alt="Golden Gun"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>NEW ARCADE GAME MODE: GOLDEN GUN</h3>
+													<p>
+														Oregon has gotten a tune-up, and now it’s time to turn up the heat. We’re introducing our very first Arcade game mode.
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/cav_elite-min.png" alt="Cav Elite"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Caveira ‘MATA-LEÃO’ : Revelation</h3>
+													<p>
+														We all wear masks. The difference is, mine doesn’t come off with the grease paint.
+													</p>
+												</div>
+												
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/Y5S1-ops-blogpost.jpg" alt="Iana and Oryx"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Iana and Oryx – First Contact</h3>
+													<p>
+														"Six, I know, I know, but you’re going to have to get used to the title someday. Can’t have all of the power and none of the kowtowing."
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/nighthaven-collection_359566.jpg" alt="Nighthaven Collection"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>NIGHTHAVEN R&D COLLECTION</h3>
+													<p>
+														Kali and Wamai have come ashore, and with them they bring the expertise and the gear that only a leading Private Military Company like NIGHTHAVEN has access to.
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/ela_elite-min_357739.png" alt="Ela Elite"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>Ela 'Huk Sztuki': Identity</h3>
+													<p>
+														What does identity mean to you?
+													</p>
+												</div>
+											</li>
+											
+											<li class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media news-items-media-shrink">
+													<div>
+														<img src="Assets/Images/minibattlepass_356671.jpg" alt="Battle Pass"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content news-border">
+													<h3>MINI BATTLE PASS: CALL ME HARRY</h3>
+													<p>
+														Phase 1 of the Rainbow Six Siege Battle Pass is coming during Operation Ember Rise, from October 15th to October 21st inclusively.
+													</p>
+												</div>
+											</li>										
+										
+										</ul>
+									</div>
+									
+									<div class="news-updates-controls news-page-controls">
+										<button onclick="newsPrevPage()" id="news-prev" class="button button-style1 news-prev controls-disabled"><span class="glyphicon glyphicon-chevron-left"></span></button>
+										<div class="current-page">
+											<h2 id="news-page-count">1/3</h2>
+										</div>
+										<button onclick="newsNextPage()" id="news-next" class="button button-style1 news-next"><span class="glyphicon glyphicon-chevron-right"></span></button>
+									</div>
+								
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="r6s-social">
+			<div class="social-content">
+				<div>
+					<h2>Visit Other Social Channels</h2>
+				</div>
+				<div class="social-content-buttons">
+					<a href="https://www.facebook.com/Rainbow6" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Rainbow6Game" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/rainbow6game_us/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCV999yg8wgRzniuejsYmnmg" target="_blank" class="fa fa-youtube"></a>
+					<a href="https://www.twitch.tv/bladegamingr6" target="_blank" class="fa fa-twitch"></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<p>Site by: Aayush Gaur &copy; 2020</p>
+		</footer>
+
+	</body>
+</html>

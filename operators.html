@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rainbow Six Siege</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Assets/Scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html"><img class="logo" src="Assets/Images/logo.png" alt="logo"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="home.html">Home</a></li>
+							<li><a href="news.html">News</a></li>
+							<li class="active"><a href="operators.html">Operators</a></li>
+							<li><a href="esports.html">Esports</a></li>
+							<li><a href="giveaway.html">Giveaway</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"  onclick="maintenance()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="r6s-home">
+		
+			<div class="r6s-op-details">
+				<div id="operator-side-background" class="operator-defender">
+				
+					<div id="op-pic" class="operator-header">
+						
+						<section>
+							<div class="operator-header-icons-names">
+								<img id="operator-icon-image" src="Assets/Images/r6s-operators-badge-aruni.png" alt="Operator Icon" />
+								<h2 id="operator-icon-name">Aruni</h2>
+							</div>
+							
+							<div class="operator-header-information">
+							
+								<div class="operator-header-side">
+									<div class="operator-header-side-title">
+										<h4>Side</h4>
+									</div>
+									<div id="side-image" class="operator-header-side-detail defender">
+										<div></div>
+										<h4 id="side-text">Defender</h4>
+									</div>
+								</div>
+								
+								<div class="operator-header-roles">
+									<div class="operator-header-roles-title">
+										<h4>Role</h4>
+									</div>
+									<p id="role">Secure, Intel Gatherer, Anchor</p>
+								</div>
+								
+								<div class="operator-header-stats">
+									<div class="operator-header-stat">
+										<div class="operator-header-stat-title">
+											<h4>Armor</h4>
+										</div>
+										<div class="stat-rates">
+											<div>
+												<div class="circle2"><div class="circle"></div></div>
+											</div>
+											<div>
+												<div class="circle2"><div id="armor-second" class="circle"></div></div>
+											</div>
+											<div>
+												<div class="circle2"><div id="armor-third" class="circle-disabled"></div></div>
+											</div>
+										</div>
+									</div>
+									<div class="operator-header-stat">
+										<div class="operator-header-stat-title">
+											<h4>Speed</h4>
+										</div>
+										<div class="stat-rates">
+											<div>
+												<div class="circle2"><div class="circle"></div></div>
+											</div>
+											<div>
+												<div class="circle2"><div id="speed-second" class="circle"></div></div>
+											</div>
+											<div>
+												<div class="circle2"><div id="speed-third" class="circle-disabled"></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</section>
+					
+						<section>
+							<div class="operator-abilities">
+								<div class="abilities-wrapper">
+									<div class="abilities-wrapper-content">
+										<h3>UNIQUE ABILITIES AND PLAYSTYLE</h3>
+										<p id="abilities-description">Once in place, the gate projects a laser array capable of detecting anyone moving through it. When an intruder is detected, energy output to the laser increases, causing second- and third-degree burns. We spent nearly an hour tossing everything from wads of paper to pieces of fruit through until we found a setting that maximizes damage while limiting energy consumption.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+					
+					</div>
+					
+					
+					<section>
+						<div class="operator-loadout">
+						
+							<h2 class="operator-loadout-title">Loadout</h2>
+							
+							<div class="operator-loadout-category">
+							
+								<h3 class="operator-loadout-category-title">Primary Weapon</h3>
+								
+								<div class="operator-loadout-category-items">
+								
+								
+									<div class="operator-loadout-weapon">	
+									
+										<p id="first-primary-title">P10 RONI</p>									
+										<div class="media">
+											<img id="first-primary-image" src="Assets/Images/r6-operator-weapon-smg-p10roni.png" alt="P10 Roni"/>
+										</div>									
+										<p id="first-primary-bottom" class="bottom-loadout-weapon-text">Submachine gun</p>	
+										
+									</div>
+									
+									
+									<div class="operator-loadout-weapon">
+									
+										<p id="second-primary-title">Mk 14 EBR</p>									
+										<div class="media">
+											<img id="second-primary-image" src="Assets/Images/Mk_14_EBR.png" alt="Mk 14 EBR"/>
+										</div>									
+										<p id="second-primary-bottom" class="bottom-loadout-weapon-text">Marksman Rifle</p>	
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							
+							<div class="operator-loadout-category">
+							
+								<h3 class="operator-loadout-category-title">Secondary Weapon</h3>
+								
+								<div class="operator-loadout-category-items">
+								
+								
+									<div class="operator-loadout-weapon">	
+									
+										<p id="secondary-title">PRB92</p>									
+										<div class="media">
+											<img id="secondary-image" src="Assets/Images/PRB92.png" alt="PRB92"/>
+										</div>									
+										<p id="secondary-bottom" class="bottom-loadout-weapon-text">Handgun</p>	
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							
+							<div class="operator-loadout-category">
+							
+								<h3 class="operator-loadout-category-title">Gadget</h3>
+								
+								<div class="operator-loadout-category-items">
+								
+								
+									<div class="operator-loadout-weapon">	
+									
+										<p id="first-gadget-title">Bulletproof Camera</p>									
+										<div class="media">
+											<img id="first-gadget-image" src="Assets/Images/Bulletproof_camera.png" alt="Bulletproof Camera"/>
+										</div>									
+										<p id="first-gadget-bottom" class="bottom-loadout-weapon-text"></p>	
+										
+									</div>
+									
+									
+									<div class="operator-loadout-weapon">
+									
+										<p id="second-gadget-title">Barb Wire</p>									
+										<div class="media">
+											<img id="second-gadget-image" src="Assets/Images/Barbed_wire.png" alt="Barbed Wire"/>
+										</div>									
+										<p id="second-gadget-bottom" class="bottom-loadout-weapon-text"></p>	
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							
+						</div>
+					</section>
+					
+					
+				</div>
+			</div>
+			
+		
+			<section>
+				<div class="r6s-op-browser">
+				
+					<div class="operator-browser-title">
+						<h2>Select your Operator</h2>
+					</div>
+					
+					<div class="operators-browser">
+					
+						<section>
+							<div class="operator-nav-title attacker">
+								<div></div>
+								<h4>Attacker</h4>
+							</div>
+							
+							<div class="operator-list-nav">
+								
+								<div id="Zero">
+									<button onclick="attacker(0);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operator-list-zero.png" alt="Zero" />
+										<span>Zero</span>
+									</button>
+								</div>
+								<div id="Ace">
+									<button onclick="attacker(1);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operator-list-ace.png" alt="Ace" />
+										<span>Ace</span>
+									</button>
+								</div>
+								<div id="Iana">
+									<button onclick="attacker(2);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operator-list-iana.png" alt="Iana" />
+										<span>Iana</span>
+									</button>
+								</div>
+								<div id="Kali">
+									<button onclick="attacker(3);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-kali_358317.png" alt="Kali" />
+										<span>Kali</span>
+									</button>
+								</div>
+								<div id="Amaru">
+									<button onclick="attacker(4);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-amaru.png" alt="Amaru" />
+										<span>Amaru</span>
+									</button>
+								</div>
+								<div id="Nokk">
+									<button onclick="attacker(5);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-nokk.png" alt="Nokk" />
+										<span>Nokk</span>
+									</button>
+								</div>
+								<div id="Gridlock">
+									<button onclick="attacker(6);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-gridlock.png" alt="Gridlock" />
+										<span>Gridlock</span>
+									</button>
+								</div>
+								
+							</div>
+						</section>
+					
+						
+						<section>
+							<div class="operator-nav-title defender">
+								<div></div>
+								<h4>Defender</h4>
+							</div>
+							
+							<div class="operator-list-nav">
+								
+								<div id="Aruni">
+									<button onclick="defender(0);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operators-list-aruni.png" alt="Aruni" />
+										<span>Aruni</span>
+									</button>
+								</div>
+								<div id="Melusi">
+									<button onclick="defender(1);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operator-list-melusi.png" alt="Melusi" />
+										<span>Melusi</span>
+									</button>
+								</div>
+								<div id="Oryx">
+									<button onclick="defender(2);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6s-operator-list-oryx.png" alt="Oryx" />
+										<span>Oryx</span>
+									</button>
+								</div>
+								<div id="Wamai">
+									<button onclick="defender(3);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-wamai_358318.png" alt="Wamai" />
+										<span>Wamai</span>
+									</button>
+								</div>
+								<div id="Goyo">
+									<button onclick="defender(4);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-goyo.png" alt="Goyo" />
+										<span>Goyo</span>
+									</button>
+								</div>
+								<div id="Warden">
+									<button onclick="defender(5);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-warden.png" alt="Warden" />
+										<span>Warden</span>
+									</button>
+								</div>
+								<div id="Mozzie">
+									<button onclick="defender(6);" class="button-style2">
+										<img class="operator-card-img" src="Assets/Images/r6-operators-list-mozzie_343537.png" alt="Mozzie" />
+										<span>Mozzie</span>
+									</button>
+								</div>
+								
+							</div>
+						</section>
+							
+					</div>
+					
+				</div>
+			</section>
+		
+		</div>
+
+		<div class="r6s-social">
+			<div class="social-content">
+				<div>
+					<h2>Visit Other Social Channels</h2>
+				</div>
+				<div class="social-content-buttons">
+					<a href="https://www.facebook.com/Rainbow6" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Rainbow6Game" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/rainbow6game_us/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCV999yg8wgRzniuejsYmnmg" target="_blank" class="fa fa-youtube"></a>
+					<a href="https://www.twitch.tv/bladegamingr6" target="_blank" class="fa fa-twitch"></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<p>Site by: Aayush Gaur &copy; 2020</p>
+		</footer>
+
+	</body>
+</html>

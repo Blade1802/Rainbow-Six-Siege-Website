@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rainbow Six Siege</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Assets/Scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html"><img class="logo" src="Assets/Images/logo.png" alt="logo"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="home.html">Home</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="operators.html">Operators</a></li>
+							<li><a href="esports.html">Esports</a></li>
+							<li><a href="giveaway.html">Giveaway</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"  onclick="maintenance()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="r6s-home">
+			
+			<section>
+				<div class="r6s-vid">
+					<div class="r6s-promo">
+						<div class="promo-row">
+							<div class="vid-wrapper">
+								<div class="vid-container">
+									<div class="media">
+										<video autoplay loop muted>
+											<source src="Assets/Videos/R6_live_Y5S4_VID_Anime_2.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</div>
+								<div class="media-content text-center">
+									<h2>Operation Neon Dawn</h2>
+									<p>
+										If you see a laser, be warned. Nighthaven was hiding her well, but not anymore. Operation Neon Dawn is welcoming a newcomer: Aruni. Don’t underestimate her. Her prosthetic arm and leg make her a fierce opponent.
+									</p>
+									<button onclick="maintenance()" class="button button-style1">View Patch Notes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="r6s-highlights-news-feed">
+				<div class="container">    
+					<div class="row">
+					
+						<section>
+							<div class="col-sm-6 r6s-highlights-feed">
+							
+								<div class="r6s-highlights-news-feed-title">
+									<h2>Highlight</h2>
+								</div>
+								
+								<div class="highlight">
+									<div class="highlight-giveaway">
+										<div class="highlight-giveaway-media">
+											<img src="Assets/Images/giveaway.jpg" alt="Giveaway Picture"/>
+										</div>
+										<div class="highlight-giveaway-content">
+											<h3>Giveaway</h3>
+											<p>
+											During Operation Neon Dawn, enjoy the Six Invitational Battle Pass and get rewarded with an impressive 7560 R6 Credits before July 31st. Click below to take part now!
+											</p>
+											<a class="button button-style1" href="giveaway.html">Enroll</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</section>								
+						
+						<section>
+							<div class="col-sm-6 r6s-highlights-feed">
+							
+								<div class="r6s-highlights-news-feed-title">
+									<h2>Latest News</h2>
+								</div>
+								
+								<div class="news-updates">
+								
+									<div class="news-updates-wrapper">
+										<ul class="news-wrapper-items">
+											
+											<li id="latest-news-1" class="news-wrapper-items-item news-active-item highlight-giveaway">
+												<div class="news-item-media">
+													<div>
+														<img src="Assets/Images/neondawn.jpg" alt="Neon Dawn Picture"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content">
+													<h3>Neon Dawn Patch Notes Addendum</h3>
+													<p>
+														Updates and fixes made over the course of the Y5S4 Test Server.
+													</p>
+												</div>
+											</li>
+											
+											<li id="latest-news-2" class="news-wrapper-items-item highlight-giveaway">
+												<div class="news-item-media">
+													<div>
+														<img src="Assets/Images/nextgen.jpg" alt="Next Generation Console"/>
+													</div>
+														
+												</div>
+												<div class="news-item-content">
+													<h3>NEXT GENERATION CONSOLES</h3>
+													<p>
+														Rainbow Six Siege is coming to Next-Gen consoles with enhanced performance.
+													</p>
+												</div>											
+											</li>
+												
+											<li id="latest-news-3" class="news-wrapper-items-item highlight-giveaway">
+												<div class="news-item-media">
+													<div>
+														<img src="Assets/Images/welcome.jpg" alt="Welcome Pack"/>
+													</div>
+													
+												</div>
+												<div class="news-item-content">
+													<h3>Welcome Pack</h3>
+													<p>
+														Enhance your Rainbow Six Siege experience with the brand new Welcome Pack!
+													</p>
+												</div>
+												
+											</li>
+												
+										</ul>
+									</div>
+										
+									<div class="news-updates-controls">
+										<button onclick="latestNewsPrev()" class="button button-style1 news-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>
+										<button onclick="latestNewsNext()" class="button button-style1 news-next"><span class="glyphicon glyphicon-chevron-right"></span></button>
+									</div>
+									
+									<div class="news-button">
+										<a href="news.html" class="button button-style1">All news</a>
+									</div>
+									
+								</div>
+							
+							</div>
+						</section>
+							
+					</div>
+				</div>
+			</div>
+			
+			<section>
+				<div class="r6s-operators-homepage">
+					<div class="promo-new-operators">
+						<div class="promo-new-operators-media">
+							<img src="Assets/Images/r6s-operator-aruni.png" alt="Aruni Picture"/>
+						</div>
+						<div class="promo-new-operators-content">
+							<h2>Meet the new operator</h2>
+							<a href="operators.html" class="button button-style1">Meet Aruni</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+		
+		<div class="r6s-social">
+			<div class="social-content">
+				<div>
+					<h2>Visit Other Social Channels</h2>
+				</div>
+				<div class="social-content-buttons">
+					<a href="https://www.facebook.com/Rainbow6" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Rainbow6Game" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/rainbow6game_us/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCV999yg8wgRzniuejsYmnmg" target="_blank" class="fa fa-youtube"></a>
+					<a href="https://www.twitch.tv/bladegamingr6" target="_blank" class="fa fa-twitch"></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<p>Site by: Aayush Gaur &copy; 2020</p>
+		</footer>
+
+	</body>
+</html>

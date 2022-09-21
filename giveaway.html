@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rainbow Six Siege</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Assets/Scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html"><img class="logo" src="Assets/Images/logo.png" alt="logo"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="home.html">Home</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="operators.html">Operators</a></li>
+							<li><a href="esports.html">Esports</a></li>
+							<li class="active"><a href="giveaway.html">Giveaway</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"  onclick="maintenance()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="r6s-home">
+			<section>
+				<div id="giveaway-form">
+					<h2>Giveaway</h2>
+				
+					<form action="#" name="regForm" onsubmit="return( validate() );">
+						
+						
+						<div>
+							<label>First Name :</label>
+							<input type="text" id="first-name-border" class="generalInput" name="firstname" placeholder="Enter Your First Name">
+						</div>
+						<h4 id="first-name-error" class="error-msg">Enter your First Name!</h4>
+						
+						
+						<div>
+							<label>Last Name :</label>
+							<input type="text" id="last-name-border" class="generalInput" name="lastname" placeholder="Enter Your Last Name">
+						</div>
+						<h4 id="last-name-error" class="error-msg">Enter your Last Name!</h4>
+						
+						
+						<div>
+							<label>Email :</label>
+							<input type="email" id="email-border" class="generalInput" name="email" placeholder="Enter Your Email Address">
+						</div>
+						<h4 id="email-error" class="error-msg">Enter your Email Address!</h4>
+						
+						
+						<div>
+							<label>Gender :</label>
+							
+							<label class="clickInput">
+								<input type="radio" name="gender" value="male"> Male
+							</label>
+							
+							<label class="clickInput">
+								<input type="radio" name="gender" value="female"> Female
+							</label>
+							
+							<label class="clickInput">
+								<input type="radio" name="gender" value="prefer not to say" checked> Prefer not to say
+							</label>
+						</div>
+						
+						
+						<div>
+							<label>In-Game Name:</label>
+							<input type="text" id="in-game-name-border" class="generalInput" name="ign" placeholder="Enter Your In-Game Name">
+						</div>
+						<h4 id="in-game-name-error" class="error-msg">Enter your In-Game Name!</h4>
+						
+						
+						<div>
+							<label >Platform :</label>
+							<select name="platform" id="platform-border" class="generalInput">
+								<option value="" disabled hidden selected>Select your Platform</option>
+								<option value="PC">PC</option>
+								<option value="XBOX">XBOX</option>
+								<option value="PS4">PS4</option>
+							</select>
+						</div>
+						<h4 id="platform-error" class="error-msg">Enter your Account Platform!</h4>
+						
+						
+						<div>
+							<label>Actions :</label>
+							
+							<label class="clickInput">
+								<input  type="checkbox" name="vehicle" value="walk"> Followed on Twitter
+							</label>
+							
+							<label class="clickInput">
+								<input  type="checkbox" name="vehicle" value="walk"> Followed on Twitch
+							</label>
+							
+							<label class="clickInput">
+								<input  type="checkbox" name="vehicle" value="walk"> Subscribed on Youtube
+							</label>
+						</div>
+						
+						
+						<div>
+							<label id="Reason">Reason :</label>
+							<textarea name="reason" id="reason-border" class="generalInput" rows="4" placeholder="Why do you think you should win the giveaway?"></textarea>
+						</div>
+						<h4 id="reason-error" class="error-msg">Enter your Reason to Win the Giveaway!</h4>
+						
+						
+						<button id="form-button" class="button button-style1" type="submit">Submit</button>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<div class="r6s-social">
+			<div class="social-content">
+				<div>
+					<h2>Visit Other Social Channels</h2>
+				</div>
+				<div class="social-content-buttons">
+					<a href="https://www.facebook.com/Rainbow6" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Rainbow6Game" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/rainbow6game_us/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCV999yg8wgRzniuejsYmnmg" target="_blank" class="fa fa-youtube"></a>
+					<a href="https://www.twitch.tv/bladegamingr6" target="_blank" class="fa fa-twitch"></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<p>Site by: Aayush Gaur &copy; 2020</p>
+		</footer>
+
+	</body>
+</html>

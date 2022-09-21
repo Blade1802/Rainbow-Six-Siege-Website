@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rainbow Six Siege</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Assets/Scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html"><img class="logo" src="Assets/Images/logo.png" alt="logo"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="home.html">Home</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="operators.html">Operators</a></li>
+							<li class="active"><a href="esports.html">Esports</a></li>
+							<li><a href="giveaway.html">Giveaway</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"  onclick="maintenance()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="r6s-home">
+		
+			<section>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="Assets/Images/naviWin.jpg" alt="Image">
+							<div class="carousel-caption">
+								<h3>NaVi Wins Rainbow Six Siege Pro League Season 10</h3>
+							</div>      
+						</div>
+
+						<div class="item">
+							<img src="Assets/Images/worldcup.jpg" alt="Image">
+							<div class="carousel-caption">
+							  <h3>Rainbow Six World Cup</h3>
+							</div>      
+						</div>
+						
+						<div class="item">
+							<img src="Assets/Images/timeline.jpg" alt="Image">
+							<div class="carousel-caption">
+							  <h3>Timeline - 2020</h3>
+							</div>      
+						</div>
+					</div>
+
+					
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</section>
+			
+			
+			<section>
+				<div class="world-cup"> 
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rWAyImpZYAc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<br>
+					<div class="world-cup-text">
+						<h2>RAINBOW SIX WORLD CUP</h2>
+						<p>
+							The Rainbow Six World Cup is an exciting new way to enjoy Rainbow Six Esports. It is the latest addition in the Rainbow Six esports ecosystem; a new international competition in which 20 countries and regions will compete in the summer of 2021 in hopes of being crowned World Champions. For fans, it will be the opportunity to share their love, pride and unconditional support with the team that will represent them on the worldwide stage.
+						</p>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section>
+				<div class="standings">
+					<h2>Global Standings</h2>
+					
+					<div style="overflow-x:auto;">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>RANK</th>
+									<th>TEAM</th>
+									<th>POINTS</th>
+									<th>STAGE 1</th>
+									<th>MAJOR 1</th>
+									<th>STAGE 2</th>
+									<th>MAJOR 2</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="first-rank">
+									<td>1</td>
+									<td class="team-name"><img src="Assets/Images/bds.png" alt="BDS Logo"/>BDS Esports</td>
+									<td>900</td>
+									<td>225</td>
+									<td>285</td>
+									<td>225</td>
+									<td>165</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="team-name"><img src="Assets/Images/tsm.png" alt="TSM Logo"/>TSM</td>
+									<td>840</td>
+									<td>225</td>
+									<td>105</td>
+									<td>225</td>
+									<td>285</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="team-name"><img src="Assets/Images/giants.png" alt="Giants Logo"/>Giants Gaming</td>
+									<td>720</td>
+									<td>225</td>
+									<td>105</td>
+									<td>225</td>
+									<td>165</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="team-name"><img src="Assets/Images/cloud9.png" alt="Cloud9 Logo"/>Cloud9</td>
+									<td>665</td>
+									<td>225</td>
+									<td>50</td>
+									<td>225</td>
+									<td>165</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td class="team-name"><img src="Assets/Images/liquid.png" alt="Liquids Logo"/>Team Liquid</td>
+									<td>660</td>
+									<td>225</td>
+									<td>105</td>
+									<td>225</td>
+									<td>105</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td class="team-name"><img src="Assets/Images/darkzero.png" alt="DarkZero Logo"/>DarkZero Esports</td>
+									<td>570</td>
+									<td>225</td>
+									<td>165</td>
+									<td>180</td>
+									<td>X</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td class="team-name"><img src="Assets/Images/ssg.png" alt="SSG Logo"/>Spacestation Gaming</td>
+									<td>550</td>
+									<td>225</td>
+									<td>50</td>
+									<td>225</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td class="team-name"><img src="Assets/Images/virtuspro.png" alt="Virtus Logo"/>Virtus.pro</td>
+									<td>530</td>
+									<td>225</td>
+									<td>165</td>
+									<td>140</td>
+									<td>X</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td class="team-name"><img src="Assets/Images/empire.png" alt="Empire Logo"/>Team Empire</td>
+									<td>455</td>
+									<td>180</td>
+									<td>X</td>
+									<td>225</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td class="team-name"><img src="Assets/Images/g2.png" alt="G2 Logo"/>G2 Esports</td>
+									<td>450</td>
+									<td>225</td>
+									<td>X</td>
+									<td>225</td>
+									<td>X</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+				
+		</div>
+
+		<div class="r6s-social">
+			<div class="social-content">
+				<div>
+					<h2>Visit Other Social Channels</h2>
+				</div>
+				<div class="social-content-buttons">
+					<a href="https://www.facebook.com/Rainbow6" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Rainbow6Game" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/rainbow6game_us/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCV999yg8wgRzniuejsYmnmg" target="_blank" class="fa fa-youtube"></a>
+					<a href="https://www.twitch.tv/bladegamingr6" target="_blank" class="fa fa-twitch"></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<p>Site by: Aayush Gaur &copy; 2020</p>
+		</footer>
+
+	</body>
+</html>
